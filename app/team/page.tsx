@@ -27,7 +27,7 @@ const boardMembers: TeamMember[] = [
   {
     name: "Anurag Kumar Singh",
     role: "Vice Chairperson",
-    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1739005302/anurag_brdjdq.png",
+    image: "https://res.cloudinary.com/anurag256k/image/upload/f_auto,q_auto/v1/anurag/gbbn2xcoyfj2lubplo1x",
     bio: "Serving as Vice Chairperson, Anurag plays a pivotal role in supporting the Chairperson and managing branch activities. He actively contributes to planning events and initiatives while ensuring smooth execution to promote member engagement.",
     email: "aunragkumarsingh@ieee.org"
   },

@@ -86,7 +86,7 @@ export default function AboutPage() {
     <div className="text-center">
       <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
         <img 
-          src="https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1739005302/anurag_brdjdq.png" 
+          src="https://res.cloudinary.com/anurag256k/image/upload/f_auto,q_auto/v1/anurag/hkvcjqnjjawcxb5iiekw" 
           alt="anurag" 
           className="object-cover w-full h-full"
         />
