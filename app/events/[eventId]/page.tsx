@@ -91,7 +91,7 @@ const events: Event[] = [
       "Clicklicious presents ClickQuic, an on-spot photo story competition that challenges participants to craft compelling visual narratives centered on engineering. This solo offline event tests technical photography skills. Editing is allowed, but AI-based enhancements are prohibited.",
     image:
       "https://res.cloudinary.com/dgna3swph/image/upload/v1743049816/Instagram_post_-_32_ct8vco.jpg",
-    registerLink: "https://unstop.com/p/clicklicious-iccsai-young-minds-2025-galgotias-university-gu-greater-noida-1447691", // ✅ Unique link
+    registerLink: "https://unstop.com/p/clicklicious-iccsai-young-minds-2025-galgotias-university-gu-greater-noida-1449674", // ✅ Unique link
   },
   
 ];
