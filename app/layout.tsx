@@ -15,6 +15,7 @@ import {
   Lightbulb,
   Award,
   GraduationCap,
+  Newspaper,
 } from "lucide-react";
 import {
   ContextMenu,
@@ -130,6 +131,13 @@ export default function RootLayout({
               </ContextMenuItem>
             </ContextMenuContent>
           </ContextMenu>
+            {/* Extended Floating Action Button for Blog */}
+            <Link href="/blog">
+            <div className="fixed bottom-6 right-6 flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-full shadow-lg transition-all duration-300 z-50">
+              <Newspaper className="h-5 w-5" />
+              <span className="font-medium">Blog</span>
+            </div>
+          </Link>
           <Toaster />
         </ThemeProvider>
       </body>
