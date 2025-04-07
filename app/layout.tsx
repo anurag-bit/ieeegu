@@ -27,6 +27,7 @@ import {
   ContextMenuSubContent,
 } from "@/components/ui/context-menu";
 import ScrollingBanner from "@/components/scrolling-banner";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -115,10 +116,14 @@ export default function RootLayout({
                 <Lightbulb className="mr-2 h-4 w-4" />
                 Innovation Challenges
               </ContextMenuItem>
-              <ContextMenuItem className="hover:bg-[#d9ecff] transition-colors flex items-center">
-                <Award className="mr-2 h-4 w-4" />
-                Awards & Recognition
-              </ContextMenuItem>
+                
+                <ContextMenuItem className="hover:bg-[#d9ecff] transition-colors flex items-center">
+                <Link href="/awards">
+                  <Award className="mr-2 h-4 w-4" />
+                  Awards & Recognition
+                  </Link>
+                </ContextMenuItem>
+                
               <ContextMenuItem className="hover:bg-[#d9ecff] transition-colors flex items-center">
                 <GraduationCap className="mr-2 h-4 w-4" />
                 Educational Resources
