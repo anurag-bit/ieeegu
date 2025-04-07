@@ -119,8 +119,9 @@ export default function RootLayout({
               </ContextMenuItem>
                 
                 <ContextMenuItem className="hover:bg-[#d9ecff] transition-colors flex items-center">
-                <Link href="/awards">
+                
                   <Award className="mr-2 h-4 w-4" />
+                  <Link href="/awards">
                   Awards & Recognition
                   </Link>
                 </ContextMenuItem>
