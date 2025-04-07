@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { clerkMiddleware } from '@clerk/nextjs/server'
+
+
 
 // This middleware function will run before any request is processed
 export function middleware(request: NextRequest) {
@@ -23,6 +26,7 @@ export function middleware(request: NextRequest) {
       if (process.env.NODE_ENV !== 'production') {
         console.log(`Blog post requested: ${slug} at ${new Date().toISOString()}`);
       }
+     
       
       return response;
     }
@@ -32,7 +36,15 @@ export function middleware(request: NextRequest) {
   return NextResponse.next();
 }
 
+
 export const config = {
   // Only run middleware for blog-related paths
-  matcher: ['/blog/:path*'],
+  matcher: [
+    '/blog/:path*',
+    // Skip Next.js internals and all static files, unless found in search params
+    '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
+    // Always run for API routes
+    '/(api|trpc)(.*)'
+  ]
 };
+export default clerkMiddleware()
