@@ -21,5 +21,5 @@ export const urlForImage = (source: any) => {
   return imageBuilder
     .image(source)
     .auto('format')
-    .fit('max')
+    .fit('fill')
 }
